@@ -26,7 +26,7 @@ def generate_obituary() -> str:
 
 
 def write_obituary(markdown: str) -> str:
-    date_str = datetime.utcnow().strftime("%Y-%m-%d")
+    date_str = datetime.utcnow().strftime("%Y-%m-%d-%H%M")
     out_dir = os.path.join(os.path.dirname(__file__), "OBITUARIES")
     os.makedirs(out_dir, exist_ok=True)
     out_path = os.path.join(out_dir, f"{date_str}.md")
