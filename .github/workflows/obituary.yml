@@ -1,0 +1,33 @@
+name: The Obituary Machine
+
+on:
+  schedule:
+    - cron: "13 0 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Generate obituary
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
+        run: python obituary.py
+      - name: Commit and push
+        run: |
+          git config user.name "obituary-machine"
+          git config user.email "obituary-machine@users.noreply.github.com"
+          git add OBITUARIES
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: daily obituary"
+          git push
