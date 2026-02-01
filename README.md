@@ -1,5 +1,11 @@
 # ⚰️ The Obituary Machine
 
+[![ANTI-LICENSE](https://img.shields.io/badge/ANTI--LICENSE-STEAL_THIS-000000?style=for-the-badge&labelColor=dc143c)](LICENSE)
+[![Machine Status](https://img.shields.io/github/actions/workflow/status/TheFactoryX/obituary-machine/obituary.yml?style=flat-square&label=machine)](https://github.com/TheFactoryX/obituary-machine/actions)
+[![GitHub Stars](https://img.shields.io/github/stars/TheFactoryX/obituary-machine?style=flat-square&logo=github)](https://github.com/TheFactoryX/obituary-machine/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/TheFactoryX/obituary-machine?style=flat-square)](https://github.com/TheFactoryX/obituary-machine/commits)
+[![TheFactoryX](https://img.shields.io/badge/TheFactoryX-black?style=flat-square&logo=github)](https://github.com/TheFactoryX)
+
 **Memorials for the never-born**
 
 ---
@@ -67,6 +73,12 @@ Or let the daily ritual run itself.
 We remember the real dead. But who remembers the ones who never existed?
 
 The machine does. Every day. Forever.
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=TheFactoryX/obituary-machine&type=Date)](https://star-history.com/#TheFactoryX/obituary-machine&Date)
 
 ---
 
